@@ -4,7 +4,7 @@
   <subtitle><![CDATA[D1ves]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2017-10-19T13:47:26.422Z</updated>
+  <updated>2017-10-19T14:48:35.477Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -19,10 +19,11 @@
     <link href="http://d1ves.io/2017/10/19/hello-world/"/>
     <id>http://d1ves.io/2017/10/19/hello-world/</id>
     <published>2017-10-19T12:30:32.562Z</published>
-    <updated>2017-10-19T13:47:26.422Z</updated>
+    <updated>2017-10-19T14:48:35.477Z</updated>
     <content type="html"><![CDATA[<hr>
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>依旧是Hello World</p>
-<h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">本博客由Hexo和Github强力驱动</div></pre></td></tr></table></figure>]]></content>
+<h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">本博客由Hexo和Github强力驱动</div></pre></td></tr></table></figure>
+<h3 id="关于迁移"><a href="#关于迁移" class="headerlink" title="关于迁移"></a>关于迁移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">之前的因为众所周知的问题并没有备份，反正看的人也不多，所以重新搞了</div></pre></td></tr></table></figure>]]></content>
     <summary type="html">
     <![CDATA[<hr>
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>依旧是Hello World</p>
