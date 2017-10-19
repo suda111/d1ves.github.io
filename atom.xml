@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[D1ves Blog]]></title>
+  <subtitle><![CDATA[D1ves]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://d1ves.io/"/>
+  <updated>2017-10-19T13:47:26.422Z</updated>
+  <id>http://d1ves.io/</id>
+  
+  <author>
+    <name><![CDATA[D1ves]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://d1ves.io/2017/10/19/hello-world/"/>
+    <id>http://d1ves.io/2017/10/19/hello-world/</id>
+    <published>2017-10-19T12:30:32.562Z</published>
+    <updated>2017-10-19T13:47:26.422Z</updated>
+    <content type="html"><![CDATA[<hr>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>依旧是Hello World</p>
+<h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">本博客由Hexo和Github强力驱动</div></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<hr>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>依旧是Hello World</p>
+<h3 id="关于]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
