@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2016/10/19/hello-world/</url>
+      <content type="html"><![CDATA[<p>依旧是Hello World</p>
+<h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">本博客由Hexo和Github强力驱动</div></pre></td></tr></table></figure>
+<h3 id="关于迁移"><a href="#关于迁移" class="headerlink" title="关于迁移"></a>关于迁移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">之前的因为众所周知的问题并没有备份，反正看的人也不多，所以重新搞了</div></pre></td></tr></table></figure>]]></content>
+      
+        
+        <tags>
+            
+            <tag> orgin </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title></title>
+      <url>/404.html</url>
+      <content type="html"><![CDATA[<html>
+<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8"></script>
+</html>]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/donate/script.js</url>
+      <content type="html"><![CDATA[jQuery(document).ready(function() {
+	var QRBox	=	$('#QRBox');
+	var MainBox	=	$('#MainBox');
+	var AliPayQR	=	'images/AliPayQR.jpg';
+	var WeChanQR	=	'images/WeChanQR.jpg';
+
+	
+
+	function showQR(QR) {
+		if (QR) {
+			MainBox.css('background-image','url('+QR+')');
+		}
+		$('#DonateText,#donateBox,#github').addClass('blur');
+		QRBox.fadeIn(300,function(argument) {
+			MainBox.addClass('showQR');
+		});
+	}
+
+	$('#donateBox>li').click(function(event) {
+		var thisID	=	$(this).attr('id');
+		if (thisID === 'AliPay') {
+			showQR(AliPayQR);
+		} else if (thisID === 'WeChat') {
+			showQR(WeChanQR);
+		}
+	});
+
+	MainBox.click(function(event) {
+		MainBox.removeClass('showQR').addClass('hideQR');
+		setTimeout (function(a) {
+			QRBox.fadeOut(300,function(argument) {
+				MainBox.removeClass('hideQR');
+			});
+			$('#DonateText,#donateBox,#github').removeClass('blur');
+		},600);
+
+	});
+});]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/donate/README.html</url>
+      <content type="html"><![CDATA[<h1 id="Donate-Page-simple"><a href="#Donate-Page-simple" class="headerlink" title="Donate-Page simple"></a>Donate-Page simple</h1><p><img src="http://upload-images.jianshu.io/upload_images/1819713-518ef42c3301b2fa.gif?imageMogr2/auto-orient/strip" alt="GIF动态效果图"></p>
+<h4 id="直接-Fork-之后需要修改以下内容为你的账户"><a href="#直接-Fork-之后需要修改以下内容为你的账户" class="headerlink" title="直接 Fork 之后需要修改以下内容为你的账户"></a>直接 Fork 之后需要修改以下内容为你的账户</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/script.js:4-6 对应账户的二维码路径</div><div class="line">/index.html:28 PayPal.me 改为现在收款页面，这样可以删除原来的按钮方式了。</div></pre></td></tr></table></figure>
+<h4 id="针对不同项目可以直接在-URL-加入项目参数和金额，不过仅仅作用于-PayPal-方式"><a href="#针对不同项目可以直接在-URL-加入项目参数和金额，不过仅仅作用于-PayPal-方式" class="headerlink" title="针对不同项目可以直接在 URL 加入项目参数和金额，不过仅仅作用于 PayPal 方式."></a>针对不同项目可以直接在 URL 加入项目参数和金额，不过仅仅作用于 PayPal 方式.</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://cdn.rawgit.com/TinyJay/donate-page/6fe4f885/simple/?item=&apos;donate-page&amp;price=2&apos;</div></pre></td></tr></table></figure>
+<h4 id="使用-iframe-嵌入页面的代码，高度至少-240px，宽度至少-310px！"><a href="#使用-iframe-嵌入页面的代码，高度至少-240px，宽度至少-310px！" class="headerlink" title="使用 iframe 嵌入页面的代码，高度至少 240px，宽度至少 310px！"></a>使用 <code>iframe</code> 嵌入页面的代码，高度至少 <code>240px</code>，宽度至少 <code>310px</code>！</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe src=&quot;https://cdn.rawgit.com/TinyJay/donate-page/6fe4f885/simple/&quot; style=&quot;overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;&quot;  frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure>
+<h3 id="License"><a href="#License" class="headerlink" title="License"></a>License</h3><p>Released under the MIT license.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/donate/index.html</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Donate-Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui"><!--禁止缩放-->
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+	<!-- clipboard.js 是 JS 复制文本的库 -->
+	<script src="script.js"></script>
+</head>
+<body style="background:transparent;">
+	<div id="DonateText" class="tr3">Donate</div>
+	<ul id="donateBox" class="list pos-f tr3">
+		<li id="AliPay" data-footnote="点击查看支付宝付款码"><a title="支付宝付款码">AliPay</a></li>
+		<li id="WeChat" data-footnote="点击查看微信付款码"><a title="微信付款码">WeChat</a></li>
+	</ul>
+	<div id="QRBox" class="pos-f left-100">
+		<div id="MainBox"></div>
+	</div>
+</body>
+</html>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/donate/style.css</url>
+      <content type="html"><![CDATA[html, html>body {
+	margin: 0px !important;
+	padding: 0px !important;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+}
+body {
+	font-family: "Helvetica Neue", Ubuntu, "WenQuanYi Micro Hei", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp", Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	line-height: 1.8em;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	background: transparent;
+}
+img {border-width: 0px;}
+a{
+	color: #000;
+	text-decoration: none;
+	outline:none;
+	border:none;
+}
+.list, .list li, .list-left li {
+	list-style: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.pos-f {
+	position: fixed;
+}
+.left-100 {
+	width: 100%;
+	height: 100%;
+}
+.blur {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+.tr3 {
+	transition: all .3s;
+}
+#DonateText {
+	position: fixed;
+	font-size: 12px;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+	background: #ffd886 url(images/like.svg) no-repeat center 10px;
+	background-size: 20px;
+	border-radius: 35px;
+	text-align: center;
+	left: calc(50% - 120px);
+	top: calc(50% - 60px);
+	z-index: -1;
+	transform: rotatez(-15deg );
+}
+#donateBox {
+	left: calc(50% - 115.5px);
+	top: calc(50% - 15px);
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	width: 150px;
+	height: 28px;
+	float: left;
+	z-index: 1;
+}
+#donateBox li {
+	width: 74px;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #ddd;
+	background: no-repeat center center;
+	background-color: rgba(204, 217, 220,0.1);
+	background-size: 45px;
+	transition: all .3s;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 600px;
+	height: 28px;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	opacity: 0.5;
+}
+#donateBox li:hover {
+	background-color: rgba(204, 217, 220,0.3);
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	opacity: 1;
+}
+#donateBox>li:first-child {
+	border-width: 0;
+}
+#donateBox a {
+	display: block;
+}
+#donateBox #PayPal {
+	background-image: url(images/paypal.svg);
+}
+
+#donateBox #AliPay {
+	background-image: url(images/alipay.svg);
+}
+#donateBox #WeChat {
+	background-image: url(images/wechat.svg);
+}
+#QRBox {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: transparent;
+	display: none;
+    perspective: 400px;
+}
+#MainBox {
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	height: 200px;
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
+	background: transparent no-repeat center center;
+	background-size: 190px;
+	border-radius: 6px;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.3);
+    opacity: 0;
+	transition: all 1s ease-in-out;
+	transform-style: preserve-3d;
+    transform-origin: center center;
+    overflow: hidden;
+}
+
+#github {
+	width: 24px;
+	height: 24px;
+	left: calc(50% + 98.5px);
+	top: calc(50% - 30px);
+	background: no-repeat center center url(images/github.svg);
+	background-size: contain;
+	opacity: 0.3;
+	transform: rotatez(15deg );
+}
+[data-footnote] {
+	position: relative;
+	overflow: hidden;
+}
+[data-footnote]:hover {
+	overflow: visible;
+}
+[data-footnote]::before, [data-footnote]::after {
+	position: absolute;
+	transition: all .3s;
+	transform: translate3d(-50%,0,0);
+	opacity: 0;
+	left: 37px;
+	z-index: 10;
+}
+[data-footnote]::before {
+	content: attr(data-footnote);
+	border-radius: 6px;
+	background-color: rgba(100,100,100,0.8);
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 6px;
+	font-size: 12px;
+	white-space: nowrap;
+	top: -24px;
+	left: 37px;
+}
+[data-footnote]::after {
+	content: '';
+	border: 5px solid #333;
+	border-color: rgba(100,100,100,0.8) transparent transparent transparent;
+	top: 0;
+	left: 37px;
+}
+[data-footnote]:hover::before,[data-footnote]:hover::after {
+	opacity: 1;
+}
+[data-footnote]:hover::before,[data-footnote]:hover::after {
+	transform: translate3d(-50%,-7px,0);
+}
+
+#MainBox.showQR {
+	opacity: 1;
+    animation-name:showQR;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    -webkit-animation:showQR 3s ease-in-out 0s 1 normal forwards;
+}
+@keyframes showQR {
+	from {
+		transform: rotateX(90deg);
+	}
+	8% {
+		opacity: 1;
+		transform: rotateX(-60deg);
+	}
+	18% {
+		opacity: 1;
+		transform: rotateX(40deg);
+	}
+	34% {
+		opacity: 1;
+		transform: rotateX(-28deg);
+	}
+	44% {
+		opacity: 1;
+		transform: rotateX(18deg);
+	}
+	58% {
+		opacity: 1;
+		transform: rotateX(-12deg);
+	}
+	72% {
+		opacity: 1;
+		transform: rotateX(9deg);
+	}
+	88% {
+		opacity: 1;
+		transform: rotateX(-5deg);
+	}
+	96% {
+		opacity: 1;
+		transform: rotateX(2deg);
+	}
+	to {
+		opacity: 1;
+	}
+}
+#MainBox.hideQR {
+	opacity: 1;
+    animation-name:hideQR;
+    animation-duration:0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    -webkit-animation:hideQR 0.5s ease-in-out 0s 1 normal forwards;
+}
+@keyframes hideQR {
+	from {
+	}
+	20%,50% {
+		transform: scale(1.08,1.08);
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: rotateZ(40deg) scale(0.6,0.6);
+	}
+}
+]]></content>
+    </entry>
+    
+  
+</search>
