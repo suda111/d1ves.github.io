@@ -37,7 +37,7 @@
     
     <title>
         
-            归档 | 
+            Ozmosis个人修改版 | 
         
         D1ves Blog
     </title>
@@ -48,8 +48,8 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="D1ves">
-    <meta name="description" itemprop="description" content="D1ves Blog | 耐心的逗比">
-    <meta name="keywords" content="d1ves,ozmosis,黑苹果,oz">
+    <meta name="description" itemprop="description" content="个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。">
+    <meta name="keywords" content="d1ves,ozmosis,黑苹果,oz,ozmosis">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -235,29 +235,62 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://d1ves.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | D1ves Blog">
+    <meta property="og:title" content="Ozmosis个人修改版 | D1ves Blog">
     <meta property="og:image" content="http://d1ves.io/img/favicon.png" />
-    <meta property="og:description" content="D1ves Blog | 耐心的逗比">
-    
+    <meta property="og:description" content="个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。">
+    <meta property="og:article:tag" content="ozmosis"> 
 
+    
+        <meta property="article:published_time" content="Fri Oct 20 2017 13:44:22 GMT+0800" />
+        <meta property="article:modified_time" content="Fri Oct 20 2017 13:51:54 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | D1ves Blog">
-    <meta name="twitter:description" content="D1ves Blog | 耐心的逗比">
+    <meta name="twitter:title" content="Ozmosis个人修改版 | D1ves Blog">
+    <meta name="twitter:description" content="个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。">
     <meta name="twitter:image" content="http://d1ves.io/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://d1ves.io" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://d1ves.io/archives/index.html" />
+        <link rel="canonical" href="http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html",
+    "headline": "Ozmosis个人修改版",
+    "datePublished": "Fri Oct 20 2017 13:44:22 GMT+0800",
+    "dateModified": "Fri Oct 20 2017 13:51:54 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "D1ves",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "一生只愿做逗比"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "D1ves Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",ozmosisd1ves,ozmosis,黑苹果,oz",
+    "description": "个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。",
+}
+</script>
 
 
     
@@ -291,162 +324,259 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-        
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/10/20/Ozmosis个人修改版/">Ozmosis个人修改版</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/10/20/Ozmosis个人修改版/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="D1ves's avatar">
-            </div>
-            <div>
-                <strong>D1ves</strong>
-                <span>10月 20, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/ozmosis/">ozmosis</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/10/19/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            依旧是Hello World
-
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/10/19/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="D1ves's avatar">
-            </div>
-            <div>
-                <strong>D1ves</strong>
-                <span>10月 19, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/other/">other</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 5; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Ozmosis个人修改版
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>D1ves</strong>
+        <span>10月 20, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACVElEQVR42u3aQZLCMAwEQP7/6d0H7BJGku0A1TlRISTuHGwz0uPnq48HHh4eHh4eHh7em/Ee8fHPjf6cr5559nkyNjw8PLwzvBdTbXDNswFVr7wGR68YDw8P7yAvf2RvQC8m9GAJuX46Hh4e3mfxks3x9SvAw8PD+25edXPcuz8eHh7e+/OSP/zJtD7fNN+WteDh4eHFvLzIdP7z0foeHh4eXsArtzTF29zr5SFvUCiPEA8PD28zL5+Iq79Kvp0sDHh4eHh38SYlqGZYcBln9BpY8fDw8M7zehFAPpQEk8fHL+6Mh4eHt5mXNFFVz1fZ1WYvPDw8vHt5VcCqAn++AJTbEfDw8PBu4lUjg8nCMI+G8fDw8E7yqtP6ZOO741eF+h4eHh7eNl4yrfcKVMn1k605Hh4e3l28CbIXZ1RbCgphBB4eHt42XjVKyL9dtclORouHh4d3npcvEvmZUaywtukKDw8PbxEvH1B1i9xjTJYZPDw8vDO8qI2pyM4DhTy2KES9eHh4eEd4+S3yMKI8oRebEpphBB4eHt4iXm8ZqMYTecBRvT8eHh7eXbxquWttG0EvtMXDw8O7l5cXtOYb4l4MEb0+PDw8vM286pFvtXcvP3h4eHh38arTca+oP2nnKocXeHh4eEd41Wm9F8vmLVyLFwY8PDy8bbw8VJ0U+yetBqOsBQ8PD+9teJMFo7fVxsPDw/tE3ip8taUg+RuAh4eHd5KXhBFJe0FS6Fr7avDw8PDO83oRwKRhq9p2UAiF8fDw8Dbzvu/Aw8PDw8PDw8N7g+MX1g8WEabsZy0AAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/ozmosis/">ozmosis</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Ozmosis个人修改版&url=http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html&pic=http://d1ves.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Ozmosis个人修改版&url=http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html&via=D1ves" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://d1ves.io/2017/10/20/Ozmosis个人修改版/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。</p>
+<a id="more"></a>
+<p>修改方式是通过还原efi文件，用HopperV4来加载，找到关键点，修改默认值的。</p>
+<p>下载地址：<br><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xcVk1Yjh1ZyDlr4bnoIE6IGoxY3A=</code></p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            有能力打赏一下吧！<br><iframe src="https://d1ves.io/donate/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://d1ves.io/2017/10/20/Ozmosis个人修改版/">http://d1ves.io/2017/10/20/Ozmosis个人修改版/</a>
+                    </p>
+                </blockquote>
+        
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        //id: '页面 ID', // 可选。默认为 location.href
+        owner: 'd1ves',
+        repo: 'd1ves.github.io',
+        oauth: {
+            client_id: '3e584d0f7ad23eaeac42',
+            client_secret: '0e9d3b04e6da2937d705f66d7e246cf35ba2c05f',
+        },
+    })
+    gitment.render('container')
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/10/19/hello-world/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

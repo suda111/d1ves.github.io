@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2017-10-20T00:28:38.651Z</updated>
+  <updated>2017-10-20T05:51:54.238Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -15,20 +15,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Ozmosis个人修改版]]></title>
+    <link href="http://d1ves.io/2017/10/20/Ozmosis%E4%B8%AA%E4%BA%BA%E4%BF%AE%E6%94%B9%E7%89%88/"/>
+    <id>http://d1ves.io/2017/10/20/Ozmosis个人修改版/</id>
+    <published>2017-10-20T05:44:22.000Z</published>
+    <updated>2017-10-20T05:51:54.238Z</updated>
+    <content type="html"><![CDATA[<p>个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。</p>
+<a id="more"></a>
+<p>修改方式是通过还原efi文件，用HopperV4来加载，找到关键点，修改默认值的。</p>
+<p>下载地址：<br><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xcVk1Yjh1ZyDlr4bnoIE6IGoxY3A=</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。</p>]]>
+    
+    </summary>
+    
+      <category term="ozmosis" scheme="http://d1ves.io/tags/ozmosis/"/>
+    
+      <category term="ozmosis" scheme="http://d1ves.io/categories/ozmosis/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <link href="http://d1ves.io/2016/10/19/hello-world/"/>
     <id>http://d1ves.io/2016/10/19/hello-world/</id>
     <published>2016-10-19T12:08:32.000Z</published>
-    <updated>2017-10-20T00:28:38.651Z</updated>
+    <updated>2017-10-20T05:58:28.674Z</updated>
     <content type="html"><![CDATA[<p>依旧是Hello World</p>
 <h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">本博客由Hexo和Github强力驱动</div></pre></td></tr></table></figure>
-<h3 id="关于迁移"><a href="#关于迁移" class="headerlink" title="关于迁移"></a>关于迁移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">之前的因为众所周知的问题并没有备份，反正看的人也不多，所以重新搞了</div></pre></td></tr></table></figure>]]></content>
+<h3 id="关于迁移"><a href="#关于迁移" class="headerlink" title="关于迁移"></a>关于迁移</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">之前的因为众所周知的问题并没有备份，反正看的人也不多，所以重新搞了</div></pre></td></tr></table></figure>
+<h3 id="之前的存档"><a href="#之前的存档" class="headerlink" title="之前的存档"></a>之前的存档</h3><p>下载地址：(不保证有效性)<br><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xbnVGR05NeCDlr4bnoIE6IGJlczg=</code></p>
+]]></content>
     <summary type="html">
     <![CDATA[<p>依旧是Hello World</p>
 <h3 id="关于本博客"><a href="#关于本博客" class="headerlink" title="关于本博客"></a>关于本博客</h3><figure class="highlight bash"><table><]]>
     </summary>
     
       <category term="orgin" scheme="http://d1ves.io/tags/orgin/"/>
+    
+      <category term="other" scheme="http://d1ves.io/categories/other/"/>
     
   </entry>
   
