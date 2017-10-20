@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2017-10-20T05:51:54.238Z</updated>
+  <updated>2017-10-20T06:06:40.734Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -19,11 +19,14 @@
     <link href="http://d1ves.io/2017/10/20/Ozmosis%E4%B8%AA%E4%BA%BA%E4%BF%AE%E6%94%B9%E7%89%88/"/>
     <id>http://d1ves.io/2017/10/20/Ozmosis个人修改版/</id>
     <published>2017-10-20T05:44:22.000Z</published>
-    <updated>2017-10-20T05:51:54.238Z</updated>
+    <updated>2017-10-20T06:06:40.734Z</updated>
     <content type="html"><![CDATA[<p>个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。</p>
 <a id="more"></a>
 <p>修改方式是通过还原efi文件，用HopperV4来加载，找到关键点，修改默认值的。</p>
-<p>下载地址：<br><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xcVk1Yjh1ZyDlr4bnoIE6IGoxY3A=</code></p>
+<p>下载地址：</p>
+<p><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xcVk1Yjh1ZyDlr4bnoIE6IGoxY3A=</code></p>
+<p>这里再附上HighSierra标准oz组件包：</p>
+<p><code>6ZO+5o6lOiBodHRwczovL3Bhbi5iYWlkdS5jb20vcy8xcVlza3VRQyDlr4bnoIE6IG50MnM=</code></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>个人修改的ozmosis，主要修改了FF/FFM，以保证macpro6，1机型能顺利通过安装。</p>]]>
