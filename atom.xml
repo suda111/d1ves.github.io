@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2017-10-30T09:23:31.663Z</updated>
+  <updated>2017-11-01T09:40:09.060Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[K2最新版刷breed方法]]></title>
+    <link href="http://d1ves.io/2017/11/01/K2%E6%9C%80%E6%96%B0%E7%89%88%E5%88%B7breed%E6%96%B9%E6%B3%95/"/>
+    <id>http://d1ves.io/2017/11/01/K2最新版刷breed方法/</id>
+    <published>2017-11-01T09:17:23.000Z</published>
+    <updated>2017-11-01T09:40:09.060Z</updated>
+    <content type="html"><![CDATA[<p>k2目前有两个版本V1和V1.1<br>V1可以采用旧的breed助手等进行降级刷操作<br>但是最新的V1.1，系统升级里查看到的是V21以上，是没法降级，提示非法固件，解决办法很简单，直接刷带breed的官固件就行</p>
+<p>下载地址：<br><code>https://raw.githubusercontent.com/d1ves/blog-file/master/k2_V21_up_breed.bin</code></p>
+<p>使用方法：<br><code>系统设置里，升级，选择上面的固件，升级完毕之后，断电，按住reset键插电源，约3秒后，状态灯快速闪烁表示进驻breed成功，电脑设置192.168.1.x，连接，浏览器输入192.168.1.1，进入breed界面，选择环境变量，选择禁用，点设置，然后再刷第三方固件</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>k2目前有两个版本V1和V1.1<br>V1可以采用旧的breed助手等进行降级刷操作<br>但是最新的V1.1，系统升级里查看到的是V21以上，是没法降级，提示非法固件，解决办法很简单，直接刷带breed的官固件就行</p>
+<p>下载地址：<br><code>https]]>
+    </summary>
+    
+      <category term="router" scheme="http://d1ves.io/tags/router/"/>
+    
+      <category term="other" scheme="http://d1ves.io/categories/other/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Ozmosis仿白果主题]]></title>
