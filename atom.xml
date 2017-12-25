@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2017-11-01T09:40:09.060Z</updated>
+  <updated>2017-12-25T05:17:13.934Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -13,6 +13,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Ozmosis For SkyLake_Up]]></title>
+    <link href="http://d1ves.io/2017/12/25/Ozmosis-For-SkyLake-Up/"/>
+    <id>http://d1ves.io/2017/12/25/Ozmosis-For-SkyLake-Up/</id>
+    <published>2017-12-25T05:10:01.000Z</published>
+    <updated>2017-12-25T05:17:13.934Z</updated>
+    <content type="html"><![CDATA[<p>因1XX系以上主板锁CFG的同时也锁NVRAM，导致Ozmosis不生效，个人测试猜测是安全引导签名之类的导致，因为自带shell是可以读写nvram的，但是自编译shell却不行，也有可能是水平不够，下面附上打包好的文件，属于临时解决办法：</p>
+<a id="more"></a>
+<p>使用方法，解压后将ESP文件夹里的全部文件丢到ESP分区（EFI分区）根目录下，丢之前最好清空ESP分区（EFI分区），然后修改OZ文件夹下的Default.plist文件（OZ配置文件）,10.13系统注意修改FF/FFM的值 </p>
+<p>下载地址：<br><code>6ZO+5o6l77yaaHR0cHM6Ly9leXVuLmJhaWR1LmNvbS9zLzNvODdsa0l1IOWvhuegge+8mk96Rm9yU3lsYWtl</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>因1XX系以上主板锁CFG的同时也锁NVRAM，导致Ozmosis不生效，个人测试猜测是安全引导签名之类的导致，因为自带shell是可以读写nvram的，但是自编译shell却不行，也有可能是水平不够，下面附上打包好的文件，属于临时解决办法：</p>]]>
+    
+    </summary>
+    
+      <category term="ozmosis" scheme="http://d1ves.io/tags/ozmosis/"/>
+    
+      <category term="ozmosis" scheme="http://d1ves.io/categories/ozmosis/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[K2最新版刷breed方法]]></title>

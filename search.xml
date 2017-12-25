@@ -3,6 +3,30 @@
   
     
     <entry>
+      <title><![CDATA[Ozmosis For SkyLake_Up]]></title>
+      <url>/2017/12/25/Ozmosis-For-SkyLake-Up/</url>
+      <content type="html"><![CDATA[<p>因1XX系以上主板锁CFG的同时也锁NVRAM，导致Ozmosis不生效，个人测试猜测是安全引导签名之类的导致，因为自带shell是可以读写nvram的，但是自编译shell却不行，也有可能是水平不够，下面附上打包好的文件，属于临时解决办法：</p>
+<a id="more"></a>
+<p>使用方法，解压后将ESP文件夹里的全部文件丢到ESP分区（EFI分区）根目录下，丢之前最好清空ESP分区（EFI分区），然后修改OZ文件夹下的Default.plist文件（OZ配置文件）,10.13系统注意修改FF/FFM的值 </p>
+<p>下载地址：<br><code>6ZO+5o6l77yaaHR0cHM6Ly9leXVuLmJhaWR1LmNvbS9zLzNvODdsa0l1IOWvhuegge+8mk96Rm9yU3lsYWtl</code></p>
+]]></content>
+      
+        <categories>
+            
+            <category> ozmosis </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ozmosis </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[K2最新版刷breed方法]]></title>
       <url>/2017/11/01/K2%E6%9C%80%E6%96%B0%E7%89%88%E5%88%B7breed%E6%96%B9%E6%B3%95/</url>
       <content type="html"><![CDATA[<p>k2目前有两个版本V1和V1.1<br>V1可以采用旧的breed助手等进行降级刷操作<br>但是最新的V1.1，系统升级里查看到的是V21以上，是没法降级，提示非法固件，解决办法很简单，直接刷带breed的官固件就行</p>
