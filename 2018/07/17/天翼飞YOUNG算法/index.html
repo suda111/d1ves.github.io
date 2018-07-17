@@ -242,7 +242,7 @@
 
     
         <meta property="article:published_time" content="Tue Jul 17 2018 14:30:04 GMT+0800" />
-        <meta property="article:modified_time" content="Tue Jul 17 2018 14:41:40 GMT+0800" />
+        <meta property="article:modified_time" content="Tue Jul 17 2018 15:08:05 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -269,7 +269,7 @@
     "mainEntityOfPage": "http://d1ves.io/2018/07/17/天翼飞YOUNG算法/index.html",
     "headline": "天翼飞YOUNG算法",
     "datePublished": "Tue Jul 17 2018 14:30:04 GMT+0800",
-    "dateModified": "Tue Jul 17 2018 14:41:40 GMT+0800",
+    "dateModified": "Tue Jul 17 2018 15:08:05 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "D1ves",
@@ -498,9 +498,9 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：<br><a id="more"></a><br>``<br>&lt;?php</p>
-<p>/<em> 电信天翼飞Young 3.09 相关算号算法 </em>/</p>
-<pre><code>function encrypt($account,$password)
+        <p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：<br><a id="more"></a><br>```</p>
+<pre><code>&lt;?php
+function encrypt($account,$password)
 {
     $account=strtoupper($account);
     $key = &apos;aI0fC8RslXg6HXaKAUa6kpvcAXszvTcxYP8jmS9sBnVfIqTRdJS1eZNHmBjKN28j&apos;;
@@ -552,8 +552,13 @@
     );
     print_r($array);
 }
-</code></pre><p>if ($argc != 3) {<br>    echo “参数错误，使用方法：php GHCA.PHP 宽带用户名 宽带密码\n”;<br>    exit;<br>}<br>encrypt($argv[1],$argv[2]);<br>?&gt;<br>``</p>
-
+if ($argc != 3) {
+echo &quot;参数错误，使用方法：php GHCA.PHP 宽带用户名 宽带密码\n&quot;;
+exit;
+}
+encrypt($argv[1],$argv[2]);
+?&gt;
+</code></pre>
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
                     <p><strong>
