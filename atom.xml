@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2018-07-17T07:08:05.189Z</updated>
+  <updated>2018-07-17T07:16:44.176Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -19,70 +19,13 @@
     <link href="http://d1ves.io/2018/07/17/%E5%A4%A9%E7%BF%BC%E9%A3%9EYOUNG%E7%AE%97%E6%B3%95/"/>
     <id>http://d1ves.io/2018/07/17/天翼飞YOUNG算法/</id>
     <published>2018-07-17T06:30:04.000Z</published>
-    <updated>2018-07-17T07:08:05.189Z</updated>
-    <content type="html"><![CDATA[<p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：<br><a id="more"></a><br>```</p>
-<pre><code>&lt;?php
-function encrypt($account,$password)
-{
-    $account=strtoupper($account);
-    $key = &apos;aI0fC8RslXg6HXaKAUa6kpvcAXszvTcxYP8jmS9sBnVfIqTRdJS1eZNHmBjKN28j&apos;;
-    $time = time();
-    $time_hex = dechex($time);
-
-    //将时间转为4个字符
-    $time_byte_one =  chr($time&gt;&gt;24);
-    $time_byte_two =  chr($time&gt;&gt;16);
-    $time_byte_thr =  chr($time&gt;&gt;8);
-    $time_byte_for =  chr($time);
-
-    $password_ascii_sum = 0;
-    for ($i=0;$i&lt;=strlen($account);$i++)
-    {
-        $password_ascii_sum+=ord(substr($account,$i,1));
-    }
-    $time_mod_pswlen = $time % strlen($password);
-    $time_mod = $time_mod_pswlen&lt;1?1:0+$time_mod_pswlen;
-
-    $seed = $time_mod - ($time_mod_pswlen==strlen($password) ? 1 : 0);
-    $account_last_four = sprintf(&apos;%04x&apos;,$password_ascii_sum ^ $seed);
-    $split_len = $time_mod -($time_mod==strlen($password)? 1 : 0) + 1;
-
-    $split_password_one = substr($password,0,$split_len);
-    $split_password_two = substr($password,$split_len);
-    $split_key_one = substr($key,0,60-strlen($split_password_one));
-    $split_key_two = substr($key,0,64-strlen($account)-strlen($split_password_two));
-
-
-    $md5_str = $time_byte_one.$time_byte_two.$time_byte_thr.$time_byte_for.$split_key_one.$split_password_one.$account.$split_key_two.$split_password_two;
-
-    //MD5 原始二进制流 注意 “true” 参数
-    $md5_once = md5($md5_str,true);
-    $md5_twice = md5($md5_once);
-    $md5_final = substr($md5_twice,0,16);
-
-    $encrypt_account = &apos;~ghca&apos;.strtoupper($time_hex.&apos;2023&apos;.$md5_final.$account_last_four.$account);
-    $array = array(
-        &apos;data&apos;=&gt;array(
-            &apos;type&apos;=&gt;&apos;ghca&apos;,
-            &apos;id&apos;=&gt;$account,
-            &apos;attribute&apos;=&gt;array(
-                &apos;account&apos;=&gt;$account,
-                &apos;password&apos;=&gt;$password,
-                &apos;encrypt&apos;=&gt;$encrypt_account
-            )
-        )
-    );
-    print_r($array);
-}
-if ($argc != 3) {
-echo &quot;参数错误，使用方法：php GHCA.PHP 宽带用户名 宽带密码\n&quot;;
-exit;
-}
-encrypt($argv[1],$argv[2]);
-?&gt;
-</code></pre>]]></content>
+    <updated>2018-07-17T07:16:44.176Z</updated>
+    <content type="html"><![CDATA[<p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">function encrypt($account,$password)</div><div class="line">   &#123;</div><div class="line">       $account=strtoupper($account);</div><div class="line">       $key = &apos;aI0fC8RslXg6HXaKAUa6kpvcAXszvTcxYP8jmS9sBnVfIqTRdJS1eZNHmBjKN28j&apos;;</div><div class="line">       $time = time();</div><div class="line">       $time_hex = dechex($time);</div><div class="line"></div><div class="line">       //将时间转为4个字符</div><div class="line">       $time_byte_one =  chr($time&gt;&gt;24);</div><div class="line">       $time_byte_two =  chr($time&gt;&gt;16);</div><div class="line">       $time_byte_thr =  chr($time&gt;&gt;8);</div><div class="line">       $time_byte_for =  chr($time);</div><div class="line"></div><div class="line">       $password_ascii_sum = 0;</div><div class="line">       for ($i=0;$i&lt;=strlen($account);$i++)</div><div class="line">       &#123;</div><div class="line">           $password_ascii_sum+=ord(substr($account,$i,1));</div><div class="line">       &#125;</div><div class="line">       $time_mod_pswlen = $time % strlen($password);</div><div class="line">       $time_mod = $time_mod_pswlen&lt;1?1:0+$time_mod_pswlen;</div><div class="line"></div><div class="line">       $seed = $time_mod - ($time_mod_pswlen==strlen($password) ? 1 : 0);</div><div class="line">       $account_last_four = sprintf(&apos;%04x&apos;,$password_ascii_sum ^ $seed);</div><div class="line">       $split_len = $time_mod -($time_mod==strlen($password)? 1 : 0) + 1;</div><div class="line"></div><div class="line">       $split_password_one = substr($password,0,$split_len);</div><div class="line">       $split_password_two = substr($password,$split_len);</div><div class="line">       $split_key_one = substr($key,0,60-strlen($split_password_one));</div><div class="line">       $split_key_two = substr($key,0,64-strlen($account)-strlen($split_password_two));</div><div class="line"></div><div class="line"></div><div class="line">       $md5_str = $time_byte_one.$time_byte_two.$time_byte_thr.$time_byte_for.$split_key_one.$split_password_one.$account.$split_key_two.$split_password_two;</div><div class="line"></div><div class="line">       //MD5 原始二进制流 注意 “true” 参数</div><div class="line">       $md5_once = md5($md5_str,true);</div><div class="line">       $md5_twice = md5($md5_once);</div><div class="line">       $md5_final = substr($md5_twice,0,16);</div><div class="line"></div><div class="line">       $encrypt_account = &apos;~ghca&apos;.strtoupper($time_hex.&apos;2023&apos;.$md5_final.$account_last_four.$account);</div><div class="line">       $array = array(</div><div class="line">           &apos;data&apos;=&gt;array(</div><div class="line">               &apos;type&apos;=&gt;&apos;ghca&apos;,</div><div class="line">               &apos;id&apos;=&gt;$account,</div><div class="line">               &apos;attribute&apos;=&gt;array(</div><div class="line">                   &apos;account&apos;=&gt;$account,</div><div class="line">                   &apos;password&apos;=&gt;$password,</div><div class="line">                   &apos;encrypt&apos;=&gt;$encrypt_account</div><div class="line">               )</div><div class="line">           )</div><div class="line">       );</div><div class="line">       print_r($array);</div><div class="line">   &#125;</div><div class="line">if ($argc != 3) &#123;</div><div class="line">echo &quot;参数错误，使用方法：php GHCA.PHP 宽带用户名 宽带密码\n&quot;;</div><div class="line">exit;</div><div class="line">&#125;</div><div class="line">encrypt($argv[1],$argv[2]);</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+]]></content>
     <summary type="html">
-    <![CDATA[<p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：<br>]]>
+    <![CDATA[<p>简单看了看，写了个算号器，具体代码我github上也有，代码如下：</p>]]>
     
     </summary>
     
