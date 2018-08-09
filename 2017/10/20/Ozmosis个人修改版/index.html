@@ -21,6 +21,8 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
 
 
 
@@ -529,30 +531,17 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 gitcoment -->
-<div id="gitment-comment">
-    <!-- Gitment 评论框 -->
-<div id="container"></div>
-</div>
-<style>
-    #gitment-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <div id="comment" class="comment"></div>
 <script>
-    var gitment = new Gitment({
-        //id: '页面 ID', // 可选。默认为 location.href
-        owner: 'd1ves',
-        repo: 'd1ves.github.io',
-        oauth: {
-            client_id: '3e584d0f7ad23eaeac42',
-            client_secret: '0e9d3b04e6da2937d705f66d7e246cf35ba2c05f',
-        },
-    })
-    gitment.render('container')
+    window.onload = function() {
+        new Valine({
+            av: AV, // source from av-min.js
+            el: '.comment',
+            app_id: "oxzrqLj6A3gupoxTUshIIoGl-gzGzoHsz",
+            app_key: "HBNNDbVokAdzuFKu1TxaHKvE",
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+        });
+    }
 </script>
 
                 
@@ -892,7 +881,8 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-   <!-- Gitment -->
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/valine@1.1.1/dist/Valine.min.js"></script>
 
 
 
