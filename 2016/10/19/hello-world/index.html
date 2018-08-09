@@ -546,21 +546,21 @@
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
     var GUEST_INFO = ['nick','mail','link'];
-    var guest_info = ''.split(',').filter(function(item){
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = '' === 'true';
-    var verify = '' === 'true';
+    var notify = 'false' === 'true';
+    var verify = 'false' === 'true';
     new Valine({
         el: '.vcomment',
         notify: notify,
         verify: verify,
         appId: "oxzrqLj6A3gupoxTUshIIoGl-gzGzoHsz",
         appKey: "HBNNDbVokAdzuFKu1TxaHKvE",
-        placeholder: "",
-        pageSize:'',
-        avatar:'',
-        lang:'',
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn',
         guest_info: guest_info
     });
 </script>
