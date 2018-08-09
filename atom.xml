@@ -4,7 +4,7 @@
   <subtitle><![CDATA[一生做逗比]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://d1ves.io/"/>
-  <updated>2018-08-09T07:41:13.880Z</updated>
+  <updated>2018-08-09T07:53:15.842Z</updated>
   <id>http://d1ves.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://d1ves.io/2018/08/09/%E6%89%8B%E5%8A%A8%E4%BF%AE%E6%94%B9bios/"/>
     <id>http://d1ves.io/2018/08/09/手动修改bios/</id>
     <published>2018-08-09T07:04:54.000Z</published>
-    <updated>2018-08-09T07:41:13.880Z</updated>
+    <updated>2018-08-09T07:53:15.842Z</updated>
     <content type="html"><![CDATA[<p>本文包含实践中总结的一些方法，有些非本人原创，皆是好友老中医、耳朵、0923等人和我一起实践中总结的，转载请注明出处：</p>
 <h1 id="bios校检"><a href="#bios校检" class="headerlink" title="bios校检"></a>bios校检</h1><h3 id="华硕和技嘉的校检修复"><a href="#华硕和技嘉的校检修复" class="headerlink" title="华硕和技嘉的校检修复"></a>华硕和技嘉的校检修复</h3><p>华硕和技嘉的校检修复其实是不用手动的，直接用ubu这个工具，把原始bios拖进去，等他运行完，不要选择任何选项，在ubu的根目录下有一个bios.bin，tmp目录下有个body.bin，二者为同一个文件，只是名字不同，修改任意一个，比如修改设置，或者加入一些模块，修改完成后覆盖另一个，名字保持原来的，回到UBU，选择”0 exit”，在选择1，就可以刷了，华硕用flashback，技嘉用efiflash</p>
 <h3 id="其他品牌（包括笔记本）"><a href="#其他品牌（包括笔记本）" class="headerlink" title="其他品牌（包括笔记本）"></a>其他品牌（包括笔记本）</h3><p>其他品牌，修改起来也不复杂，首先用uefitool打开rom，搜索uuid”414D94AD-998D-47D2-BFCD-4E882241DE32”,右键导出（Extract body）备份，然后用相应工具做修改，把导出来的覆盖回去（Replace body），即可用afu等工具刷机，其中华擎可以直接用hex工具打开这个导出来的，全部填充为FF，导入回去，即可bios设置中刷机，其他品牌没尝试，理论通用</p>
